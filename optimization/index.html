@@ -1,0 +1,60 @@
+---
+layout: default
+title: Optimization
+---
+
+<div class="category-header">
+  <a href="/" class="back-link">&larr; 포트폴리오로</a>
+  <h1>Optimization</h1>
+  <p>Unreal Engine 5.6 기반의 최적화 작업들을 정리한 페이지입니다.</p>
+</div>
+
+{% assign wp_posts = site.optimization | where: "category", "World Partition" %}
+{% assign nanite_posts = site.optimization | where: "category", "Nanite & Lumen" %}
+{% assign profiling_posts = site.optimization | where: "category", "Performance Profiling" %}
+
+{% if wp_posts.size > 0 %}
+<div class="section-group">
+  <h2>World Partition</h2>
+  <ul class="post-list">
+    {% for post in wp_posts %}
+    <li>
+      <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+      {% if post.summary %}<div class="post-summary">{{ post.summary }}</div>{% endif %}
+    </li>
+    {% endfor %}
+  </ul>
+</div>
+{% endif %}
+
+{% if nanite_posts.size > 0 %}
+<div class="section-group">
+  <h2>Nanite &amp; Lumen</h2>
+  <ul class="post-list">
+    {% for post in nanite_posts %}
+    <li>
+      <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+      {% if post.summary %}<div class="post-summary">{{ post.summary }}</div>{% endif %}
+    </li>
+    {% endfor %}
+  </ul>
+</div>
+{% endif %}
+
+{% if profiling_posts.size > 0 %}
+<div class="section-group">
+  <h2>Performance Profiling</h2>
+  <ul class="post-list">
+    {% for post in profiling_posts %}
+    <li>
+      <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+      {% if post.summary %}<div class="post-summary">{{ post.summary }}</div>{% endif %}
+    </li>
+    {% endfor %}
+  </ul>
+</div>
+{% endif %}
+
+{% if site.optimization.size == 0 %}
+<p style="color:#8b949e;">아직 작성된 항목이 없습니다. <code>_optimization/</code> 폴더에 md 파일을 추가하세요.</p>
+{% endif %}

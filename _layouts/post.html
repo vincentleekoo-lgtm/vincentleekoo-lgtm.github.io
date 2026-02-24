@@ -1,0 +1,16 @@
+---
+layout: default
+---
+
+<article class="post">
+  <div class="post-header">
+    <a href="{{ page.collection | prepend: '/' | append: '/' | relative_url }}" class="back-link">&larr; 목록으로</a>
+    <h1 class="post-title">{{ page.title }}</h1>
+    {% if page.summary %}
+    <p class="post-summary">{{ page.summary }}</p>
+    {% endif %}
+  </div>
+  <div class="post-content">
+    {{ content }}
+  </div>
+</article>

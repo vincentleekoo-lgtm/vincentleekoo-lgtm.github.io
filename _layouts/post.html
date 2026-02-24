@@ -25,14 +25,14 @@ layout: default
   </div>
   <script>
     async function checkPassword() {
-      const input = document.getElementById('pw-input').value;
+      const input = document.getElementById('pw-input').value.trim();
       const msgBuffer = new TextEncoder().encode(input);
       const hashBuffer = await crypto.subtle.digest('SHA-256', msgBuffer);
       const hashArray = Array.from(new Uint8Array(hashBuffer));
       const hashHex = hashArray.map(b => b.toString(16).padStart(2, '0')).join('');
               const res = await fetch('/password.json', {cache: 'no-store'});
       const data = await res.json();
-      if (hashHex === data.hash) {
+              if (hashHex === data.hash.trim()) {
         document.getElementById('lock-screen').style.display = 'none';
         document.getElementById('post-content').style.display = 'block';
       } else {

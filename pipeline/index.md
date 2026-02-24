@@ -1,27 +1,57 @@
-# Pipeline
-
-[← 돌아가기](../)
-
+---
+layout: none
+title: Pipeline | TA-LHK
 ---
 
-Python 스크립팅 및 에셋 파이프라인 자동화 작업들입니다.
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: #0d1117; color: #e6edf3; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }
+.header { background: linear-gradient(135deg, #1a2a4a 0%, #0d1117 60%); border-bottom: 1px solid #30363d; padding: 40px 40px 30px; }
+.header .back { color: #58a6ff; text-decoration: none; font-size: 0.9em; display: inline-block; margin-bottom: 12px; }
+.header .back:hover { text-decoration: underline; }
+.header h1 { font-size: 2em; font-weight: 700; color: #58a6ff; }
+.container { max-width: 900px; margin: 0 auto; padding: 48px 24px; }
+.section { margin-bottom: 40px; }
+.section h2 { font-size: 1.2em; color: #58a6ff; margin-bottom: 16px; padding-bottom: 8px; border-bottom: 1px solid #30363d; }
+.section ul { list-style: none; padding: 0; }
+.section ul li { padding: 8px 0; color: #c9d1d9; border-bottom: 1px solid #21262d; font-size: 0.95em; }
+.section ul li::before { content: '▸ '; color: #58a6ff; }
+.note { background: #161b22; border: 1px solid #30363d; border-left: 3px solid #58a6ff; border-radius: 6px; padding: 14px 18px; color: #8b949e; font-size: 0.9em; margin-top: 32px; }
+</style>
 
-## 작업 목록
+<div class="header">
+  <a class="back" href="../">← 포트폴리오로 돌아가기</a>
+  <h1>Pipeline</h1>
+</div>
 
-### Python 자동화
-- Unreal Engine Python API 활용
-- 에셋 일괄 처리 스크립트
-- 로드 및 임포트 자동화
+<div class="container">
+  <p style="color:#8b949e; margin-bottom:32px;">Python 스크립팅 및 에셋 파이프라인 자동화 작업들입니다.</p>
 
-### 에셋 패키징
-- 첨크 기반 에셋 분를 시스템
-- Horde 빌드 파이프라인 연동
-- 데이터 테이블 기반 쿨킹 자동화
+  <div class="section">
+    <h2>Python 자동화</h2>
+    <ul>
+      <li>Unreal Engine Python API 활용</li>
+      <li>에셋 일괄 처리 스크립트</li>
+      <li>로드 및 임포트 자동화</li>
+    </ul>
+  </div>
 
-### 빌드 검증
-- 패키징 사이즈 모니터링
-- 로그 분석 자동화
+  <div class="section">
+    <h2>에셋 패키징</h2>
+    <ul>
+      <li>첨크 기반 에셋 분를 시스템</li>
+      <li>Horde 빌드 파이프라인 연동</li>
+      <li>데이터 테이블 기반 쿨킹 자동화</li>
+    </ul>
+  </div>
 
----
+  <div class="section">
+    <h2>빌드 검증</h2>
+    <ul>
+      <li>패키징 사이즈 모니터링</li>
+      <li>로그 분석 자동화</li>
+    </ul>
+  </div>
 
-> 작업 내용은 지속적으로 추가될 예정입니다.
+  <div class="note">작업 내용은 지속적으로 추가될 예정입니다.</div>
+</div>

@@ -28,4 +28,9 @@ title: TA-LHK Portfolio
     <span class="card-count">세부 항목 보기 &rarr;</span>
   </a>
 
+  <a href="/pcg/" class="card">
+    <h2>Issue Tracking</h2>
+    <p>Procedural Content Generation 프레임워크를 활용한 자동 콘텐츠 생성 작업 정리</p>
+    <span class="card-count">세부 항목 보기 &rarr;</span>
+  </a>
 </div>

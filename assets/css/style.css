@@ -226,6 +226,7 @@ a:hover { text-decoration: underline; }
 /* ===== IMAGE ===== */
 .post-content img {
   max-width: 100%;
+    height: auto;
   border-radius: 6px;
   border: 1px solid #30363d;
   margin: 1rem 0;

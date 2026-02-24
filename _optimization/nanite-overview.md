@@ -1,4 +1,4 @@
----
+<img width="1408" height="752" alt="Gemini_Generated_Image_hb0suchb0suchb0s" src="https://github.com/user-attachments/assets/3d76fc26-fb33-4fda-aa15-4fdbc4f6a7fd" />---
 title: "Nanite Overview"
 summary: "UE5 Nanite 가상 폴리곤 시스템 개요"
 ---
@@ -17,3 +17,10 @@ Nanite는 UE5의 가상 폴리곤 시스템으로, 수억 폴리곤의 메시를
 
 - 애니메이션 메시에는 미지원
 - 스켈레턴 메시 호환 필요
+
+
+## 그림 테스트
+<img width="1408" height="752" alt="Gemini_Generated_Image_hb0suchb0suchb0s" src="https://github.com/user-attachments/assets/299f95df-dedd-4179-8faf-45c79e7bebbf" />
+
+
+## 영상 테스트
